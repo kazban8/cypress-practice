@@ -6,7 +6,7 @@ describe('Dropdown tests', () => {
     });
   
     it('Default option should be "Please select an option"', () => {
-      cy.get('#dropdown').should('have.text', '\n    Please select an option\n    Option 1\n    Option 2\n  ');
+        cy.get('select#dropdown option:selected').should('have.text', 'Please select an option');
     });
   
     it('Select "Option 2" and verify it is selected', () => {
@@ -15,3 +15,5 @@ describe('Dropdown tests', () => {
     });
   });
   
+
+//   
