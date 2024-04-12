@@ -15,5 +15,3 @@ describe('Dropdown tests', () => {
     });
   });
   
-
-//   
